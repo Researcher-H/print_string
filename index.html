@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>H: GitHub page Practice-1</title>
+  <script type="text/javascript" src="./js/basics.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>GitHub Pages のサンプルです</h1>
+    <a href="https://meta-x-h.github.io/"><button>Home に戻る</button></a>
+    <p><a href="https://tipsnote.github.io/gh-pages-sample/">参考ページ</a></p>
+    
+    <br>
+
+    <!-- js-01 start -->
+    <p>
+      js-01 start
+
+      <hr></hr>
+      <p id="js1">first JS here</p>
+      <hr></hr>
+
+      js-01 end
+    </p>
+    <!-- js-01 end -->
+
+    <br>
+
+    <!-- js-02 start -->
+    <p>train2: before JS
+      <br>
+      <!-- https://blog.codecamp.jp/programming-javascript-pop-up -->
+      <!-- 【ここから】新しいウィンドでブラウザを起動し、ポップアップ表示 -->
+      <button>ただのボタン</button><br>
+      <br>
+      <!-- add click function and show a new window -->
+      <button onclick="openWin()">新しいウィンドウで<br>ポップアップを表示</button>
+      <!-- remember, "openWin()" is a created function below -->
+      <!-- only "onclick" is a built-in html function-->
+
+      <!-- 【ここまで】新しいウィンドでブラウザを起動し、ポップアップ表示 -->
+      <br>
+      after JS
+    </p>
+    <!-- js-02 end -->
+
+    <br>
+
+    <!-- JS trivial A -->
+    <!-- https://stackoverflow.com/questions/4243577/which-is-better-script-type-text-javascript-script-or-script-scr -->
+    <script>// this is ok for HTML5 as default as text/javascript</script>
+    <script type="text/javascript">//this is critical for ~HTML4</script>
+
+
+    <!-- intersection -->
+
+
+    <!-- JS trial 3-1 failed -->
+    <!-- create a google map with Ajax -->
+    <!-- https://developers.google.com/maps/documentation/javascript/tutorial -->
+
+    
+    <!-- js-03-2 start  -->
+    <p>train3: before JS
+      <br>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'ninki')" id="defaultOpen">人気記事</button>
+          <button class="tablinks" onclick="openCity(event, 'toku')">お得情報</button>
+          <button class="tablinks" onclick="openCity(event, 'keikai')">警戒情報</button>
+        </div>
+        
+        <div id="ninki" class="tabcontent">
+            <ul>
+                <li><a href="#">頑張るイクメン</a></li>
+                <li><a href="#">未経験からのプログラミング</a></li>
+                <li><a href="#">水槽の掃除の仕方</a></li>
+            </ul>    
+        </div>
+        
+        <div id="toku" class="tabcontent">
+            <ul>
+                <li><a href="#">冬休み早割まとめ</a></li>
+                <li><a href="#">お中元早割まとめ</a></li>
+                <li><a href="#">年賀状・・・</a></li>
+            </ul>    
+         </div>
+        
+        <div id="keikai" class="tabcontent">
+            <ul>
+                <li><a href="#">黄砂情報</a></li>
+                <li><a href="#">乾燥注意報</a></li>
+                <li><a href="#">今年のセキセツは・・・</a></li>
+            </ul>    
+        </div>
+      
+        <br>
+      after JS
+    </p>
+
+    <!-- JS trial 4 -->
+    <!-- add one value to a clicked button -->
+    <!-- https://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button -->
+    <p>train4: before JS
+      <br>
+
+      <div id="true_area">
+        <div class="head">
+          <p>賛成: <a id="count">0</a></p>          
+        </div>
+      </div>
+
+      <div id="false_area">
+        <div class="head">
+          <p>反対: <a id="count">0</a></p>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button id="true_btn" class="btn" onclick="count_bttn(this.id)" >賛成に1票</button>
+        <button id="false_btn" class="btn" onclick="count_bttn(this.id)" >反対に1票</button>
+      </div>
+
+      <br>
+      after JS
+    </p>
+
+
+    <!-- JS trial 5 -->
+    <!-- show, wait and hide an image -->
+    <!-- https://www.w3schools.com/cssref/pr_class_display.asp -->
+    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show -->
+    <!-- https://www.w3schools.com/jsref/met_win_settimeout.asp -->
+    <p>
+      train5: before JS
+      <br>
+
+      <button onclick="myFunction()">Press to start</button>
+
+      <div id="images">
+        <img src="./images/figure_korobu.png" alt="figure_korobu">
+      </div>
+
+      <br>
+      after JS
+    </p>
+
+
+    <br>
+
+
+    <!-- JS trivial B -->
+    <!-- many javascript math function -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math -->
+
+
+    <br>
+
+
+    <!-- JS trial 6 -->
+    <!-- random numbers -->
+    <!-- https://www.w3schools.com/jsref/jsref_random.asp -->
+    <!-- https://www.w3schools.com/js/js_random.asp -->
+    <!-- make an array of 8 elements -->
+    <!-- https://stackoverflow.com/questions/2380019/generate-unique-random-numbers-between-1-and-100 -->
+
+    <p>train6: before JS
+      <br>
+
+      <div>
+        <p >One random number is: <a id="sing_rnd_num">0</a></p>
+        <p >One random integer number is: <a id="int_rnd_num">0</a></p>
+        <p >Multiple random numbers are: <a id="mult_rnd_num">0</a></p>
+      </div>
+
+      <br>
+      after JS
+    </p>
+
+
+    <!-- JS trial 7 -->
+    <p>
+      js-07 start
+
+      <input type="file" name="inputfile" id="inputfile">
+      <br>
+      <pre id="output"></pre>
+      <script type="text/javascript">
+        document.getElementById('inputfile').addEventListener('change', function() {
+          var fr=new FileReader();
+
+          fr.onload=function(){
+            document.getElementById('output').textContent=fr.result;
+          }
+            
+          fr.readAsText(this.files[0]);
+        })
+      </script> 
+
+      js-07 end
+
+    </p>
+
+
+    <!-- JS trial 7.0.2 -->
+    <!-- some getting around trick1 -->
+    <!-- https://stackoverflow.com/questions/4642681/simple-way-to-display-data-in-a-txt-file-on-a-webpage -->
+    <p>
+      js-07.02 start
+
+      <div id="list">
+        <p>
+          <iframe src="./docs/hello.txt" frameborder="0" height="30"
+            width="95%">
+          </iframe>
+        </p>
+      </div>
+
+      js-07.02 end
+    </p>
+
+    <!-- JS trial 7.0.3 -->
+    <!-- some getting around trick2 -->
+    <object data="https://www.w3.org/TR/PNG/iso_8859-1.txt" width="700" height="200">
+      Not supported
+    </object>
+
+  </main>
+</body>
+</html>
