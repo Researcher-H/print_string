@@ -8,6 +8,8 @@ console.log(word.innerHTML);
 word.innerHTML = "Hello world, from js file";
 
 
+// js-02 //
+
 
 
 
